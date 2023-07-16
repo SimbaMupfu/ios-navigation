@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="go" id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-6Y-AWf">
+                                <rect key="frame" x="62" y="97" width="266" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mf3-UC-2WF">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="5"/>
+                                        <connections>
+                                            <action selector="selectCommissionValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bX6-uO-1Tv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxt-qt-QG4">
+                                        <rect key="frame" x="111" y="0.0" width="44" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="15"/>
+                                        <connections>
+                                            <action selector="selectCommissionValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGk-wO-9Dk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jO-cB-iKL">
+                                        <rect key="frame" x="222" y="0.0" width="44" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="25"/>
+                                        <connections>
+                                            <action selector="selectCommissionValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bEO-qV-3uc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0p-XI-BGg" userLabel="Price">
+                                <rect key="frame" x="62" y="151.33333333333334" width="266" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPo-aH-yzY" userLabel="Commission">
+                                <rect key="frame" x="62" y="205.33333333333334" width="266" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuW-AP-yfK">
+                                <rect key="frame" x="169.33333333333334" y="259.33333333333331" width="51.666666666666657" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sell">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSellTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vg6-3g-jVJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RpQ-6Y-AWf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="7sS-5f-JQ6"/>
+                            <constraint firstItem="bPo-aH-yzY" firstAttribute="leading" secondItem="F0p-XI-BGg" secondAttribute="leading" id="Eeq-ZI-RMf"/>
+                            <constraint firstItem="bPo-aH-yzY" firstAttribute="top" secondItem="F0p-XI-BGg" secondAttribute="bottom" constant="20" id="GbA-eA-FEf"/>
+                            <constraint firstItem="OuW-AP-yfK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gl8-bc-u7e"/>
+                            <constraint firstItem="F0p-XI-BGg" firstAttribute="leading" secondItem="RpQ-6Y-AWf" secondAttribute="leading" id="MXL-DR-LFq"/>
+                            <constraint firstItem="OuW-AP-yfK" firstAttribute="top" secondItem="bPo-aH-yzY" secondAttribute="bottom" constant="20" id="cTs-ij-U3K"/>
+                            <constraint firstItem="F0p-XI-BGg" firstAttribute="top" secondItem="RpQ-6Y-AWf" secondAttribute="bottom" constant="20" id="dXs-12-X6t"/>
+                            <constraint firstItem="RpQ-6Y-AWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpT-EJ-f50"/>
+                            <constraint firstItem="bPo-aH-yzY" firstAttribute="trailing" secondItem="F0p-XI-BGg" secondAttribute="trailing" id="faB-Zc-0gK"/>
+                            <constraint firstItem="F0p-XI-BGg" firstAttribute="trailing" secondItem="RpQ-6Y-AWf" secondAttribute="trailing" id="qRe-tq-VA7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commissionValue" destination="bPo-aH-yzY" id="2hu-1i-FS8"/>
+                        <outlet property="priceValue" destination="F0p-XI-BGg" id="ENg-Ro-82T"/>
+                        <segue destination="GLi-tG-2vy" kind="presentation" identifier="goToCarDetailsScreen" id="Gc3-6K-i4F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="4"/>
+        </scene>
+        <!--Car Details View Controller-->
+        <scene sceneID="c27-y6-R09">
+            <objects>
+                <viewController storyboardIdentifier="goToCarDetailsScreen" id="GLi-tG-2vy" customClass="CarDetailsViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z19-1A-xc8" customClass="Car" customModule="Navigation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CarName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngh-9A-7Yl">
+                                <rect key="frame" x="174" y="121" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGW-8o-kI5">
+                                <rect key="frame" x="189" y="192" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Commission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvZ-ef-Cew">
+                                <rect key="frame" x="174" y="295" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1t-IG-mct">
+                                <rect key="frame" x="165" y="428" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="onBackTapped:" destination="GLi-tG-2vy" eventType="touchUpInside" id="meC-Ix-bXc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wzc-6A-sTq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="carNameLabel" destination="ngh-9A-7Yl" id="1Rl-Wt-T4T"/>
+                        <outlet property="commissionValueLabel" destination="kvZ-ef-Cew" id="rqP-hd-KCc"/>
+                        <outlet property="priceValueLabel" destination="QGW-8o-kI5" id="rMS-KZ-e97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TcH-yp-tMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.69230769230762" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
